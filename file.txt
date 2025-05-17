@@ -1,0 +1,3 @@
+Retomare  este curso muy pronto.
+Este es un ejemplo utilizando nano
+en windows. bye!
