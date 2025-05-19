@@ -30,6 +30,10 @@ public class vectorEstructuras {
     
     // 5. Se declara elemento del vector 
     Alumno A1 = new Alumno();
+    
+    // 10. Llamar funciones
+    llenarVectorAlumno(alumnos);
+    mostrarVectorAlumno(alumnos);
   }
   
   // 6. Operaciones para un alumno
@@ -47,6 +51,21 @@ public class vectorEstructuras {
     System.out.println(A.codigo + " - " + A.nombre + " - " + A.nota);
   }
   
-  // 8. Operaciones para el vector alumno
+  // 8. Operaciones para el vector alumno: llenar
+  static void llenarVectorAlumno(Alumno alumnos[]){
+    System.out.println("\nIngresar datos alumnos");
+    for (int i = 0; i < MAX; i++) {
+      System.out.println("\nAlumno " + (i+1) + ": ");
+      alumnos[i] = new Alumno();
+      llenarAlumno(alumnos[i]);
+    }
+  }
   
+  // 9. Mostrar vector 
+  static void mostrarVectorAlumno(Alumno alumnos[]){
+    System.out.println("\nMostrando vector alumnos\n");
+    for (int i = 0; i < MAX; i++) {
+      mostrarAlumno(alumnos[i]);
+    }
+  }
 }
